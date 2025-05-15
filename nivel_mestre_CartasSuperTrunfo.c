@@ -40,7 +40,7 @@ int main() {
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
 
-    printf("Digite os dados para a carta 1: \n");
+    printf("Digite os dados para a carta 0: \n");
     printf("Digite um dos 8 estados usando uma letra de 'A' a 'H' para representá-lo: ");
     scanf(" %c", &estado); 
     
@@ -68,7 +68,7 @@ int main() {
 
     superpoder = populacao + area + pib + turista + pibpc + (1/dp);
     
-    printf("\nDigite os dados para a carta 2: \n");
+    printf("\nDigite os dados para a carta 1: \n");
     printf("Digite um dos 8 estados usando uma letra de 'A' a 'H' para representá-lo: ");
     scanf(" %c", &estado1); 
     
@@ -96,17 +96,17 @@ int main() {
 
     superpoder1 = populacao1 + area1 + pib1 + turista1 + pibpc1 + (1/dp1);
 
-    printf("Superpoder %f", superpoder);
-    printf("Superpoder1 %f", superpoder1);
-
-
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
-    printf("\nCarta 1:\nEstado: %c\nCódigo: %s\nNome da cidade: %s\nPopulação: %lu\nÁrea: %.2f km²\nPIB: %.2f bilhões de reais\nNúmeros de pontos turísticos: %d\nDensidade populacional: %.2f hab/km²\nPIB per capita: %.2f reais\n", estado, codigo, cidade, populacao, area, pib, turista, dp, pibpc);
+    printf("\nCarta 0:\nEstado: %c\nCódigo: %s\nNome da cidade: %s\nPopulação: %lu\nÁrea: %.2f km²\nPIB: %.2f bilhões de reais\nNúmeros de pontos turísticos: %d\nDensidade populacional: %.2f hab/km²\nPIB per capita: %.2f reais\n", estado, codigo, cidade, populacao, area, pib, turista, dp, pibpc);
 
-    printf("\nCarta 2:\nEstado: %c\nCódigo: %s\nNome da cidade: %s\nPopulação: %lu\nÁrea: %.2f km²\nPIB: %.2f bilhões de reais\nNúmeros de pontos turísticos: %d\nDensidade populacional: %.2f hab/km²\nPIB per capita: %.2f reais\n", estado1, codigo1, cidade1, populacao1, area1, pib1, turista1, dp1, pibpc1);
+    printf("\nCarta 1:\nEstado: %c\nCódigo: %s\nNome da cidade: %s\nPopulação: %lu\nÁrea: %.2f km²\nPIB: %.2f bilhões de reais\nNúmeros de pontos turísticos: %d\nDensidade populacional: %.2f hab/km²\nPIB per capita: %.2f reais\n", estado1, codigo1, cidade1, populacao1, area1, pib1, turista1, dp1, pibpc1);
     
+    printf("\nComparação de cartas:\nPopulação: carta %d venceu\nÁrea: carta %d venceu\nPIB: Carta %d venceu\nPontos turísticos: Carta %d venceu\nDensidade populacional: Carta %d venceu\nPIB per capita: Carta %d venceu\nSuper poder: Carta %d venceu\n", populacao < populacao1, area < area1, pib < pib1, turista < turista1, dp > dp1, pibpc < pibpc1, superpoder < superpoder1);
+
+
     return 0;
+
 }
