@@ -94,9 +94,9 @@ int main() {
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
-    printf("\nCarta 1:\nEstado: %c\nCódigo: %s\nNome da cidade: %s\nPopulação: %d\nÁrea: %.2f km²\nPIB: %.2f bilhões de reais\nNúmeros de pontos turísticos: %d\nDensidade populacional: %.2f\nPIB per capita: %.2f\n", estado, codigo, cidade, populacao, area, pib, turista, dp, pibpc);
+    printf("\nCarta 1:\nEstado: %c\nCódigo: %s\nNome da cidade: %s\nPopulação: %d\nÁrea: %.2f km²\nPIB: %.2f bilhões de reais\nNúmeros de pontos turísticos: %d\nDensidade populacional: %.2f hab/km²\nPIB per capita: %.2f reais\n", estado, codigo, cidade, populacao, area, pib, turista, dp, pibpc);
 
-    printf("\nCarta 2:\nEstado: %c\nCódigo: %s\nNome da cidade: %s\nPopulação: %d\nÁrea: %.2f km²\nPIB: %.2f bilhões de reais\nNúmeros de pontos turísticos: %d\nDensidade populacional: %.2f\nPIB per capita: %.2f\n", estado1, codigo1, cidade1, populacao1, area1, pib1, turista1, dp1, pibpc1);
+    printf("\nCarta 2:\nEstado: %c\nCódigo: %s\nNome da cidade: %s\nPopulação: %d\nÁrea: %.2f km²\nPIB: %.2f bilhões de reais\nNúmeros de pontos turísticos: %d\nDensidade populacional: %.2f hab/km²\nPIB per capita: %.2f reais\n", estado1, codigo1, cidade1, populacao1, area1, pib1, turista1, dp1, pibpc1);
     
     return 0;
 }
